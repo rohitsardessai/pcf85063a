@@ -249,7 +249,6 @@ bool
 PCF85063A::ctrl_set(PCF85063A_Regs regs, bool mask_alarms)
 {
   uint8_t buf[2];
-  int wrsz;
 
   if (mask_alarms)
     regs &= ~(PCF85063A_REG_AF | PCF85063A_REG_TF);
